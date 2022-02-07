@@ -13,7 +13,7 @@ $ node test.js 1 + 1
 
 */
 
-const { FormulaManager, Enviroment } = require("./build/main");
+const { FormulaManager, Enviroment } = require("./dist/mf");
 
 const enviroment = Enviroment.createDefault();
 const manager = new FormulaManager(enviroment);
