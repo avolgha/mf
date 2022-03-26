@@ -82,8 +82,7 @@ export class Lexer {
     if (this._nextSymbol()) {
       return;
     }
-    console.log(this.input!.substring(this.pos!));
-
+    
     err.lexerError(
       `Unexpected token in column ${this.pos! + 1}.`,
       this.input!,
